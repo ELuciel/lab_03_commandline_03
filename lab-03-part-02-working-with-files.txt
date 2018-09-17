@@ -36,6 +36,18 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
+Adlm			Music			key.pem
+Adobe			New Unity Project	more-stuff
+Applications		Pictures		mtec1002
+DANK			Public			mtec1002-lab-02
+Desktop			QLData			mtec1002-lab-03.tar.gz
+Documents		S			mtec1003-lab-03
+Downloads		Things			mtec1003-lab-03.tar.gz
+E			cert.pem		pymel.log
+Library			foo.txt			stuff
+M			hello.txt		testjp.zip.tar
+MPLABXProjects		ipe.properties		xgen
+Movies			isus
 
 
 
@@ -44,7 +56,7 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+touch bar.txt
 
 
 ==========
