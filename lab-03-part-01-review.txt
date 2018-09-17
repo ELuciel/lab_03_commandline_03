@@ -15,24 +15,49 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
-
+~
+ent-v314-017:~ student$ ~
+-bash: /Users/student: is a directory
 
 ==========
 2. Prove that you're in your home directory.
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
+pwd
+ent-v314-017:~ student$ pwd
+/Users/student
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1002 in it?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
-
+ls
+Adlm			Movies			isus
+Adobe			Music			key.pem
+Applications		New Unity Project	more-stuff
+DANK			Pictures		mtec1002
+Desktop			Public			mtec1003-lab-03
+Documents		QLData			mtec1003-lab-03.tar.gz
+Downloads		S			pymel.log
+E			Things			stuff
+Library			cert.pem		stuff.tar.gz
+M			hello.txt		testjp.zip.tar
+MPLABXProjects		ipe.properties		xgen
+ent-v314-017:~ student$ mv stuff.tar.gz mtec1002-lab-02 
+ent-v314-017:~ student$ ls
+Adlm			Movies			isus
+Adobe			Music			key.pem
+Applications		New Unity Project	more-stuff
+DANK			Pictures		mtec1002
+Desktop			Public			mtec1002-lab-02
+Documents		QLData			mtec1003-lab-03
+Downloads		S			mtec1003-lab-03.tar.gz
+E			Things			pymel.log
+Library			cert.pem		stuff
+M			hello.txt		testjp.zip.tar
+MPLABXProjects		ipe.properties		xgen
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1002 in them, list them below (otherwise skip this step):
@@ -51,7 +76,10 @@ $ rm -rf mtec1002-labs-02
 
 (skip if these directories don't exist)
 ----------
-
+tec1002
+Desktop			Public			mtec1002-lab-02
+Documents		QLData			mtec1003-lab-03
+Downloads		S			mtec1003-lab-03.tar.gz
 
 
 ==========
@@ -66,14 +94,19 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
 
-
+curl -o mtec1002-lab-03.tar.gz http://foureyes.github.io/mtec1002-spring2014/labs/03/mtec1002-lab-03.tar.gz
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11169  100 11169    0     0   147k      0 --:--:-- --:--:-- --:--:--  147k
 
 ==========
 7.  Uncompress the file that you just downloaded.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+tar -xvf mtec1002-lab-03.tar.gz
+tar: Unrecognized archive format
+tar: Error exit delayed from previous errors.
 
 
 ==========
@@ -97,7 +130,7 @@ Write the command(s) that you used to do this - as well as its output - below:
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
 
-
+ls
 
 ==========
 10.  Now... go back home.  Then change to the science-fiction directory using a relative path.  The directory is located in books... which is located in the mtec1002-lab-03 directory.  Verify you're in the right directory using pwd.
