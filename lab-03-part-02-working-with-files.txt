@@ -150,8 +150,7 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-cd books/other
-head pg1232.txt
+head books/other/pg1232.txt
 Title: The Prince
 
 
@@ -164,8 +163,7 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-cd books/other
-tail pg1232.txt
+tail books/other/pg1232.txt
 Title: The Prince
 
 
@@ -178,11 +176,11 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-less pg1232.txt
+less books/other/pg1232.txt
 space bar flips the pages
 q quits the program and erases all
 
-more pg1232.txt
+more books/other/pg1232.txt
 space bar flips pages
 q quits programs but keep all content
 
@@ -192,18 +190,18 @@ q quits programs but keep all content
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-head
+head 
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 52639
-wc pg1232.txt
+wc books/other/pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
 5063
-wc -l pg1232.txt
+wc -l books/other/pg1232.txt
