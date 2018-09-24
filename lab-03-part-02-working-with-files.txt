@@ -64,7 +64,7 @@ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+ls -l
 
 
 ==========
@@ -87,7 +87,7 @@ Write the command that you used to remove the file.  Copy and paste the output o
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
+mv foo.txt qix.txt
 
 
 ==========
@@ -110,7 +110,7 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+rm my_files
 
 
 ==========
@@ -132,7 +132,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+shows content of file
 
 
 ==========
@@ -144,7 +144,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+head
+tail
 
 
 ==========
