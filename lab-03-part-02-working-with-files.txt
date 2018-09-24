@@ -197,7 +197,7 @@ head
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 52639
-wc books/other/pg1232.txt
+wc -w books/other/pg1232.txt
 
 
 ==========
