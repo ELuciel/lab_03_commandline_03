@@ -73,7 +73,7 @@ ls -l
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
+cp bar.txt baz.txt
 
 
 ==========
@@ -81,6 +81,10 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt
+foo.txt			mtec1002-lab-03.tar.gz
+baz.txt			mtec1002-lab-03
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
@@ -102,7 +106,8 @@ mv foo.txt qix.txt
 
 Write out the command that you used and what happened.
 ----------
-
+rmdir my_files
+rmdir: my_files: No such file or directory
 
 
 ==========
@@ -111,6 +116,7 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 rm my_files
+rm: my_files: No such file or directory
 
 
 ==========
@@ -144,8 +150,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-head
-tail
+cd books/other
+head pg1232.txt
+Title: The Prince
 
 
 ==========
@@ -157,7 +164,9 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
+cd books/other
+tail pg1232.txt
+Title: The Prince
 
 
 ==========
@@ -169,7 +178,13 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less pg1232.txt
+space bar flips the pages
+q quits the program and erases all
 
+more pg1232.txt
+space bar flips pages
+q quits programs but keep all content
 
 
 ==========
@@ -177,15 +192,18 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+head
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+52639
+wc pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+5063
+wc -l pg1232.txt
